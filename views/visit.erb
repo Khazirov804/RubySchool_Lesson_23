@@ -3,16 +3,9 @@
 
 <form action="/visit" method="POST" role="form">
 
-  <div class="form-group"></br>
-    
-    <h3>Выберите своего парикмахера</h3>
-    <select namebarber="select">
-      <option value="value1">Walter White </option>
-      <option value="value2">Jessie Pinkman</option>
-      <option value="value3">Gus Fring</option>
-    </select></br>
+  <div class="form-group">
 
-    <label>Ваше имя</label></br>
+    <label>Ваше имя</label>
     <input name="username" type="text" class="form-control" placeholder="Введите ваше имя">
   </div>
 
@@ -24,6 +17,16 @@
   <div class="form-group">
   	<label>Когда вас ждать?</label>
     <input name="datetime" type="text" class="form-control" placeholder="Введите дату и время для записи">
+  </div>
+
+
+  <div class="form-group">
+    <label>Выберите своего парикмахера</label>
+    <select class="form-control">
+      <option>Jessie Pinkman</option>
+      <option>Walter White</option>
+      <option>Gus Fring</option>
+    </select>
   </div>
 
   <button type="submit" class="btn btn-primary">Записаться</button>
