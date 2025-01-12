@@ -24,15 +24,16 @@ get '/' do
 end
 
 post '/visit' do
-	@value = params[:value]
+
 	@username = params[:username]
 	@phone = params[:phone]
 	@datetime = params[:datetime]
+	@barber = params[:barber]
 
 	f = File.open './public/users.txt', 'a'
-	f.write "User: #{@username}, Phone: #{@phone}, Date and time: #{@datetime}, Your barber: #{@value} "
+	f.write "Имя: #{@username}, Телефон: #{@phone}, Дата и время: #{@datetime}, Парикмахер: #{@barber} "
 	f.close
-	erb :visit
+	erb "OK, Имя:#{@username}, Телефон: #{@phone}, Дата и время: #{@datetime}, Парикмахер: #{@barber}"
 end
 
 post '/contacts' do
