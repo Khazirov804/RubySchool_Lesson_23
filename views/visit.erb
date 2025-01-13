@@ -6,23 +6,23 @@
   <div class="form-group">
 
     <label>Ваше имя</label>
-    <input name="username" type="text" class="form-control" placeholder="Введите ваше имя">
+    <input id="bbb" name="username" type="text" class="form-control" placeholder="Введите ваше имя">
   </div>
 
   <div class="form-group">
   	<label>Ваш номер телефона</label>
-    <input name="phone" type="text" class="form-control" placeholder="Введите ваш номер телефона">
+    <input name="phone" type="text" class="form-control ccc" placeholder="Введите ваш номер телефона">
   </div>
 
   <div class="form-group">
   	<label>Когда вас ждать?</label>
-    <input name="datetime" type="text" class="form-control" placeholder="Введите дату и время для записи">
+    <input id="aaa" name="datetime" type="text" class="form-control" placeholder="Введите дату и время для записи">
   </div>
 
 
   <div class="form-group">
     <label>Выберите своего парикмахера</label>
-    <select name="barber" class="form-control">
+    <select name="barber" class="form-control ccc">
       <option>Jessie Pinkman</option>
       <option>Walter White</option>
       <option>Gus Fring</option>
@@ -32,3 +32,9 @@
   <button type="submit" class="btn btn-primary">Записаться</button>
 
 </form>
+
+<script type="text/javascript">
+  $('#aaa').css('background-color','yellow');
+    $('#bbb ').css('background-color','green');
+    $('.ccc').css('background-color','red');
+</script>
