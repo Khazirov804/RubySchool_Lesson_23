@@ -29,11 +29,12 @@ post '/visit' do
 	@phone = params[:phone]
 	@datetime = params[:datetime]
 	@barber = params[:barber]
+	@color = params[:color]
 
 	f = File.open './public/users.txt', 'a'
-	f.write "Имя: #{@username}, Телефон: #{@phone}, Дата и время: #{@datetime}, Парикмахер: #{@barber} "
+	f.write "Имя: #{@username}, Телефон: #{@phone}, Дата и время: #{@datetime}, Парикмахер: #{@barber}, Цвет: #{@color} "
 	f.close
-	erb "OK, Имя:#{@username}, Телефон: #{@phone}, Дата и время: #{@datetime}, Парикмахер: #{@barber}"
+	erb "OK, Имя:#{@username}, Телефон: #{@phone}, Дата и время: #{@datetime}, Парикмахер: #{@barber}, Цвет: #{@color} "
 end
 
 post '/contacts' do
